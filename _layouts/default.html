@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }} - SMath</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        /* CSS đơn giản để chia 3 phần */
+        .header { background: #2c3e50; color: white; padding: 20px; text-align: center; } /* Phần 1 */
+        .navbar { background: #34495e; padding: 10px; text-align: center; } /* Phần 2 */
+        .navbar a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .content { padding: 20px; max-width: 800px; margin: auto; } /* Phần 3 */
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>SMath</h1>
+        <p>Học Toán để làm chủ tương lai</p>
+    </div>
+
+    <div class="navbar">
+        <a href="{{ site.baseurl }}/">Trang chủ</a>
+        <a href="{{ site.baseurl }}/toan9/">Toán 9</a>
+        <a href="{{ site.baseurl }}/toan10/">Toán 10</a>
+        <a href="{{ site.baseurl }}/toan11/">Toán 11</a>
+    </div>
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+</body>
+</html>
