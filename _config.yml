@@ -8,7 +8,7 @@ remote_theme: pages-themes/architect@v0.2.0 # Bạn có thể đổi sang 'minim
 # Nếu trang web của bạn có dạng username.github.io/SMath/ thì điền /SMath vào baseurl
 # Nếu bạn dùng tên miền riêng (như smath.vn) thì để trống ""
 baseurl: "" 
-url: "https://yourusername.github.io" # Thay 'yourusername' bằng tên GitHub của bạn
+url: "https://toanthayson.github.io/SMath/toan9/" # Thay 'yourusername' bằng tên GitHub của bạn
 
 # 3. HỖ TRỢ HIỂN THỊ TOÁN HỌC (MATHJAX)
 markdown: kramdown
