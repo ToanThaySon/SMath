@@ -1,16 +1,30 @@
-title: SMath
-tagline: "Học Toán để làm chủ tương lai" # Tiêu ngữ của bạn
-remote_theme: pages-themes/architect@v0.2.0 # Giao diện chuyên nghiệp
+# 1. THÔNG TIN CƠ BẢN
+title: SMATH
+tagline: "Học Toán để làm chủ tương lai"
+description: "Hệ thống tổng hợp đề thi và tài liệu Toán lớp 6, 7, 8, 9 dành cho học sinh."
+remote_theme: pages-themes/architect@v0.2.0 # Bạn có thể đổi sang 'minimal' hoặc 'slate' nếu muốn
 
-# Định nghĩa Menu (Phần 2)
-navigation:
-  - title: "Trang chủ"
-    url: /
-  - title: "Toán 6"
-    url: /toan6/
-  - title: "Toán 7"
-    url: /toan7/
-  - title: "Toán 8"
-    url: /toan8/
-  - title: "Toán 9"
-    url: /toan9/
+# 2. CẤU HÌNH ĐƯỜNG DẪN (QUAN TRỌNG)
+# Nếu trang web của bạn có dạng username.github.io/SMath/ thì điền /SMath vào baseurl
+# Nếu bạn dùng tên miền riêng (như smath.vn) thì để trống ""
+baseurl: "" 
+url: "https://yourusername.github.io" # Thay 'yourusername' bằng tên GitHub của bạn
+
+# 3. HỖ TRỢ HIỂN THỊ TOÁN HỌC (MATHJAX)
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
+# 4. LOẠI BỎ CÁC FILE KHÔNG CẦN THIẾT KHI BIÊN DỊCH WEB
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/ bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .jekyll-metadata
+
+# 5. CÀI ĐẶT BỔ SUNG
+encoding: utf-8
+lang: vi-VN
