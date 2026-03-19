@@ -4,31 +4,53 @@
     <title>{{ page.title }} - SMath</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-        /* CSS đơn giản để chia 3 phần */
-        .header { background: #2c3e50; color: white; padding: 20px; text-align: center; } /* Phần 1 */
-        .navbar { background: #34495e; padding: 10px; text-align: center; } /* Phần 2 */
-        .navbar a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .content { padding: 20px; max-width: 800px; margin: auto; } /* Phần 3 */
+        /* Tổng thể */
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; }
+
+        /* PHẦN 1: HEADER */
+        .header { background: #2c3e50; color: white; padding: 40px; text-align: center; border-bottom: 4px solid #1abc9c; }
+        .header h1 { margin: 0; font-size: 3em; letter-spacing: 3px; }
+        .header p { margin: 10px 0 0; opacity: 0.9; font-size: 1.1em; font-weight: 300; }
+
+        /* PHẦN 2: NAVBAR & DROPDOWN */
+        .navbar { background: #34495e; display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        .dropdown { position: relative; display: inline-block; }
+        .dropbtn { color: white; padding: 18px 30px; text-decoration: none; display: block; font-weight: bold; font-size: 16px; }
+        .dropdown:hover .dropbtn { background-color: #1abc9c; color: white; transition: 0.3s; }
+
+        .dropdown-content {
+            display: none; 
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 220px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+            z-index: 1;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .dropdown-content a {
+            color: #333 !important;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-weight: 500 !important;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .dropdown-content a:last-child { border-bottom: none; }
+        .dropdown-content a:hover { background-color: #f8f9fa; color: #1abc9c !important; padding-left: 25px; transition: 0.2s; }
+
+        .dropdown:hover .dropdown-content { display: block; }
+
+        /* PHẦN 3: CONTENT */
+        .content { padding: 40px 20px; max-width: 1000px; margin: 30px auto; background: white; min-height: 600px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h1>SMath</h1>
+        <h1>SMATH</h1>
         <p>Học Toán để làm chủ tương lai</p>
     </div>
-
-    <div class="navbar">
-        <a href="{{ site.baseurl }}/">Trang chủ</a>
-        <a href="{{ site.baseurl }}/toan6/">Toán 6</a>
-        <a href="{{ site.baseurl }}/toan7/">Toán 7</a>
-        <a href="{{ site.baseurl }}/toan8/">Toán 8</a>
-        <a href="{{ site.baseurl }}/toan9/">Toán 9</a>
-    </div>
-
-    <div class="content">
-        {{ content }}
-    </div>
-
-</body>
-</html>
