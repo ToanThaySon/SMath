@@ -1,6 +1,9 @@
 # SMath
 # Danh sách đề ôn tập Toán 12
-
+body {
+  background-color: #f0f2f5; /* Màu xám nhạt chuyên nghiệp */
+  color: #333;
+}
 Chào mừng các em học sinh. Dưới đây là danh sách các đề kiểm tra:
 
 ### Chương 1: Ứng dụng đạo hàm
