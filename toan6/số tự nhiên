@@ -1,15 +1,27 @@
 ---
 layout: default
-title: Toán 7 - Số hữu tỉ
+title: Chuyên đề Số tự nhiên - Toán 6
 ---
 
-# 📚 CHUYÊN ĐỀ: SỐ HỮU TỈ (TOÁN 7)
+# 🔢 CHUYÊN ĐỀ 1: SỐ TỰ NHIÊN
 
-Chào các em, đây là khu vực tổng hợp tài liệu về Số hữu tỉ. 
+Chào mừng các em đến với nội dung ôn tập Chương 1. Dưới đây là danh sách các tài liệu học tập được thầy tổng hợp.
 
-### 📂 Danh sách đề kiểm tra PDF
-* **Đề 01:** Tập hợp các số hữu tỉ - [Xem/Tải về](./file-pdf-cua-ban.pdf)
-* **Đề 02:** Cộng, trừ, nhân, chia số hữu tỉ - [Xem/Tải về](./file-pdf-2.pdf)
+### I. Lý thuyết trọng tâm
+Các em cần nắm vững các tập hợp số $\mathbb{N}$ và $\mathbb{N}^*$, thứ tự thực hiện phép tính và các dấu hiệu chia hết.
 
-### 💡 Ghi chú ôn tập
-> Các em nhớ ôn kỹ quy tắc chuyển vế và quy tắc dấu ngoặc trước khi làm bài tập nâng cao nhé!
+### II. Danh sách đề kiểm tra (File PDF)
+
+| STT | Tên tài liệu | Loại đề | Tải về |
+|:---:|:---|:---:|:---:|
+| 1 | Đề kiểm tra 15 phút - Tập hợp | Trắc nghiệm | [Xem ngay](./de-15p-tap-hop.pdf) |
+| 2 | Đề ôn tập giữa kỳ 1 - Số tự nhiên | Tự luận | [Xem ngay](./de-gk1-so-tu-nhien.pdf) |
+| 3 | Bài tập nâng cao về lũy thừa | Bồi dưỡng | [Xem ngay](./bai-tap-nang-cao.pdf) |
+
+---
+### III. Bài tập rèn luyện nhanh
+Học sinh thử sức giải bài toán sau trực tiếp trên giao diện web:
+* **Bài toán:** Tính giá trị biểu thức $A = 2^3 \cdot 5 - (15 + 1^{10})$.
+* **Gợi ý:** Thực hiện lũy thừa trước, sau đó đến ngoặc, rồi mới đến nhân chia, cộng trừ.
+
+> **Lưu ý:** Nếu không mở được file PDF, các em hãy nhấn chuột phải vào link và chọn "Lưu liên kết thành..." (Save link as...).
