@@ -1,14 +1,13 @@
-# SMath
-# Danh sách đề ôn tập Toán 12
-body {
-  background-color: #f0f2f5; /* Màu xám nhạt chuyên nghiệp */
-  color: #333;
-}
-Chào mừng các em học sinh. Dưới đây là danh sách các đề kiểm tra:
+# 📚 THƯ VIỆN TOÁN HỌC TRỰC TUYẾN
 
-### Chương 1: Ứng dụng đạo hàm
-* [Đề số 1: Khảo sát hàm số](test.pdf)
-* [Đề số 2: Cực trị hàm số](duong-dan-den-file-de-2.pdf)
+Chào mừng các em học sinh đến với kho tài liệu!
 
-### Chương 2: Nguyên hàm - Tích phân
-* [Đề số 3: Diện tích hình phẳng](duong-dan-den-file-de-3.pdf)
+## 📂 Danh Mục Tài Liệu
+| Chuyên đề | Tài liệu PDF | Ghi chú |
+| :--- | :--- | :--- |
+| **Giải tích 12** | [Tải đề 01](./PDF/giai-tich-1) | Nguyên hàm |
+| **Hình học Oxyz** | [Tải đề 02](./PDF/oxyz-02) | Tọa độ không gian |
+| **Đề thi thử** | [Xem ngay](./PDF/de-minh-hoa) | Cập nhật 2026 |
+
+---
+*Mọi thắc mắc vui lòng liên hệ qua Zalo hoặc Email.*
