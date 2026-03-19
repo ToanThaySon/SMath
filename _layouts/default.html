@@ -1,101 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>{{ page.title }} - SMath</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | SMath</title>
+    
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <style>
-        /* Tổng thể */
-        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; }
+        /* TỔNG THỂ */
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; color: #333; line-height: 1.6; }
 
-        /* PHẦN 1: HEADER */
-        .header { background: #2c3e50; color: white; padding: 40px; text-align: center; border-bottom: 4px solid #1abc9c; }
-        .header h1 { margin: 0; font-size: 3em; letter-spacing: 3px; }
-        .header p { margin: 10px 0 0; opacity: 0.9; font-size: 1.1em; font-weight: 300; }
+        /* PHẦN 1: HEADER (LOGO & TIÊU NGỮ) */
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #34495e); 
+            color: white; 
+            padding: 50px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid #1abc9c; 
+        }
+        .header h1 { margin: 0; font-size: 3.5em; letter-spacing: 4px; text-transform: uppercase; }
+        .header p { margin: 10px 0 0; font-size: 1.2em; font-weight: 300; opacity: 0.9; }
 
-        /* PHẦN 2: NAVBAR & DROPDOWN */
-        .navbar { background: #34495e; display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        /* PHẦN 2: NAVBAR (MENU ĐIỀU HƯỚNG) */
+        .navbar { 
+            background: #ffffff; 
+            display: flex; 
+            justify-content: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
         
+        /* Cấu trúc Dropdown */
         .dropdown { position: relative; display: inline-block; }
-        .dropbtn { color: white; padding: 18px 30px; text-decoration: none; display: block; font-weight: bold; font-size: 16px; }
-        .dropdown:hover .dropbtn { background-color: #1abc9c; color: white; transition: 0.3s; }
+        .dropbtn { 
+            color: #2c3e50; 
+            padding: 20px 25px; 
+            text-decoration: none; 
+            display: block; 
+            font-weight: bold; 
+            font-size: 16px; 
+            transition: 0.3s;
+        }
+        .dropdown:hover .dropbtn { background-color: #1abc9c; color: white; }
 
+        /* Nội dung khi di chuột vào */
         .dropdown-content {
-            display: none; 
+            display: none;
             position: absolute;
             background-color: #ffffff;
             min-width: 220px;
-            box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
-            z-index: 1;
-            border-radius: 0 0 5px 5px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+            border-radius: 0 0 8px 8px;
+            overflow: hidden;
         }
-
         .dropdown-content a {
-            color: #333 !important;
+            color: #333;
             padding: 12px 20px;
             text-decoration: none;
             display: block;
-            text-align: left;
-            font-weight: 500 !important;
             border-bottom: 1px solid #f1f1f1;
+            transition: 0.2s;
         }
-
-        .dropdown-content a:last-child { border-bottom: none; }
-        .dropdown-content a:hover { background-color: #f8f9fa; color: #1abc9c !important; padding-left: 25px; transition: 0.2s; }
-
+        .dropdown-content a:hover { background-color: #f8f9fa; color: #1abc9c; padding-left: 30px; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        /* PHẦN 3: CONTENT */
-        .content { padding: 40px 20px; max-width: 1000px; margin: 30px auto; background: white; min-height: 600px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        /* PHẦN 3: NỘI DUNG CHÍNH (CONTENT AREA) */
+        .content { 
+            max-width: 1000px; 
+            margin: 40px auto; 
+            padding: 40px; 
+            background: white; 
+            border-radius: 12px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
+            min-height: 500px;
+        }
+
+        /* Footer bổ sung */
+        .footer { text-align: center; padding: 40px; color: #7f8c8d; font-size: 0.9em; }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>SMATH</h1>
-        <p>Học Toán để làm chủ tương lai</p>
-    </div>
+    <header class="header">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.tagline }}</p>
+    </header>
 
-   <div class="navbar">
-    <div class="dropdown">
-        <a href="{{ site.baseurl }}/" class="dropbtn">Trang chủ</a>
-    </div>
-
-    <div class="dropdown">
-        <a href="{{ site.baseurl }}/toan6/" class="dropbtn">Toán 6</a>
-        <div class="dropdown-content">
-            <a href="{{ site.baseurl }}/toan6/so-tu-nhien.html">Số tự nhiên</a>
-            <a href="{{ site.baseurl }}/toan6/hinh-hoc.html">Hình học</a>
+    <nav class="navbar">
+        <div class="dropdown">
+            <a href="{{ site.baseurl }}/" class="dropbtn">Trang chủ</a>
         </div>
-    </div>
 
-    <div class="dropdown">
-        <a href="{{ site.baseurl }}/toan7/" class="dropbtn">Toán 7</a>
-        <div class="dropdown-content">
-            <a href="{{ site.baseurl }}/toan7/so-huu-ti.html">Số hữu tỉ</a>
-            <a href="{{ site.baseurl }}/toan7/tam-giac.html">Hình học Tam giác</a>
+        <div class="dropdown">
+            <a href="{{ site.baseurl }}/toan6/" class="dropbtn">Toán 6</a>
+            <div class="dropdown-content">
+                <a href="{{ site.baseurl }}/toan6/so-tu-nhien.html">Số tự nhiên</a>
+                <a href="{{ site.baseurl }}/toan6/hinh-hoc.html">Hình học trực quan</a>
+            </div>
         </div>
-    </div>
 
-    <div class="dropdown">
-        <a href="{{ site.baseurl }}/toan8/" class="dropbtn">Toán 8</a>
-        <div class="dropdown-content">
-            <a href="{{ site.baseurl }}/toan8/da-thuc.html">Đa thức</a>
-            <a href="{{ site.baseurl }}/toan8/thales.html">Định lý Thales</a>
+        <div class="dropdown">
+            <a href="{{ site.baseurl }}/toan7/" class="dropbtn">Toán 7</a>
+            <div class="dropdown-content">
+                <a href="{{ site.baseurl }}/toan7/so-huu-ti.html">Số hữu tỉ</a>
+                <a href="{{ site.baseurl }}/toan7/tam-giac.html">Hình học tam giác</a>
+            </div>
         </div>
-    </div>
 
-    <div class="dropdown">
-        <a href="{{ site.baseurl }}/toan9/" class="dropbtn">Toán 9</a>
-        <div class="dropdown-content">
-            <a href="{{ site.baseurl }}/toan9/can-thuc.html">Căn bậc hai</a>
-            <a href="{{ site.baseurl }}/toan9/duong-tron.html">Đường tròn</a>
+        <div class="dropdown">
+            <a href="{{ site.baseurl }}/toan8/" class="dropbtn">Toán 8</a>
+            <div class="dropdown-content">
+                <a href="{{ site.baseurl }}/toan8/da-thuc.html">Đa thức</a>
+                <a href="{{ site.baseurl }}/toan8/thales.html">Định lý Thales</a>
+            </div>
         </div>
-    </div>
-</div>
 
-    <div class="content">
+        <div class="dropdown">
+            <a href="{{ site.baseurl }}/toan9/" class="dropbtn">Toán 9</a>
+            <div class="dropdown-content">
+                <a href="{{ site.baseurl }}/toan9/can-thuc.html">Căn bậc hai</a>
+                <a href="{{ site.baseurl }}/toan9/duong-tron.html">Đường tròn</a>
+                <a href="{{ site.baseurl }}/toan9/on-thi-10.html">Ôn thi vào 10</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content">
         {{ content }}
-    </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 SMath - Chia sẻ tri thức Toán học</p>
+    </footer>
 
 </body>
 </html>
