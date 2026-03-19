@@ -28,3 +28,4 @@ exclude:
 # 5. CÀI ĐẶT BỔ SUNG
 encoding: utf-8
 lang: vi-VN
+permalink: /:path.html
