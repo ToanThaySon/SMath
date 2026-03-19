@@ -1,13 +1,14 @@
-# 📚 THƯ VIỆN TOÁN HỌC TRỰC TUYẾN
+title: SMath
+tagline: "Học Toán để làm chủ tương lai" # Tiêu ngữ của bạn
+remote_theme: pages-themes/architect@v0.2.0 # Giao diện chuyên nghiệp
 
-Chào mừng các em học sinh đến với kho tài liệu!
-
-## 📂 Danh Mục Tài Liệu
-| Chuyên đề | Tài liệu PDF | Ghi chú |
-| :--- | :--- | :--- |
-| **Giải tích 12** | [Tải đề 01](./PDF/giai-tich-1) | Nguyên hàm |
-| **Hình học Oxyz** | [Tải đề 02](./PDF/oxyz-02) | Tọa độ không gian |
-| **Đề thi thử** | [Xem ngay](./PDF/de-minh-hoa) | Cập nhật 2026 |
-
----
-*Mọi thắc mắc vui lòng liên hệ qua Zalo hoặc Email.*
+# Định nghĩa Menu (Phần 2)
+navigation:
+  - title: "Trang chủ"
+    url: /
+  - title: "Toán 9"
+    url: /toan9/
+  - title: "Toán 10"
+    url: /toan10/
+  - title: "Toán 11"
+    url: /toan11/
